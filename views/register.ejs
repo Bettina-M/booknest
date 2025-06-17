@@ -1,0 +1,22 @@
+ <h1><%- title %></h1>
+<%- messages() %>
+ 
+  <form action="/login" method="POST">
+    <label>First Name:</label><br>
+    <input type="name" name="firstname" required value="<%= locals.firstname %>"><br><br>
+
+    <label>Last Name:</label><br>
+    <input type="name" name="lastname" required value="<%= locals.lastname %>"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required value="<%= locals.email %>"><br><br>
+    
+    <label>Create Password:</label><br>
+    <input type="password" name="pass"
+     pattern="(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{5,}" 
+      title="Password must be at least 5 characters long and include 1 capital letter and 1 special character."  required><br><br>
+
+    <button type="submit" class="btn">Register</button>
+  </form>
+
+  <p>Already have an account? <a href="/">Login here</a></p>

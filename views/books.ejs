@@ -1,0 +1,21 @@
+
+  <h1><%- title %></h1>
+  <%- messages() %>
+  <h1>Books in this Category</h1>
+
+  <% if (books && books.length > 0) { %>
+    <ul>
+      <% books.forEach(book => { %>
+        <li>
+          <strong><%= book.book_title %></strong> by <%= book.book_author %><br>
+          <% if (book.book_image) { %>
+            <div id="book_image"><img src="<%= book.book_image.startsWith('/') ? book.book_image : '/' + book.book_image %>">></div>
+          <% } %>
+          <em><%= book.book_description %></em>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>No books found in this category.</p>
+  <% } %>
+

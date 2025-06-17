@@ -1,0 +1,12 @@
+<div id="booksPage">
+  <h1><%- title %></h1>
+  <p>You're now logged in!</p>
+  <%- messages() %>
+
+  <p>Click a category to see the books</p>
+  <ul id="categoryList">
+    <% categories.forEach(cat => { %>
+      <li><a href="/books/category/<%= cat.category_id %>"><%= cat.category_name %></a></li>
+    <% }) %>
+  </ul>
+</div>

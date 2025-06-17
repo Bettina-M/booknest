@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* Header */
+header {
+  background-color: #4a4e69;
+  color: #fff;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid #9a8c98;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+
+header a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #f2e9e4;
+  font-weight: 500;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+main h2 {
+  font-size: 1.6rem;
+  color: #22223b;
+}
+
+main p {
+  font-size: 1rem;
+  color: #4a4e69;
+  margin-bottom: 2rem;
+}
+
+/*homepage*/
+#homepage{
+    background-image: url(https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+    margin:0;
+}
+/*bookspage*/
+#booksPage{
+    background-image: url(https://images.pexels.com/photos/7034468/pexels-photo-7034468.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+    margin:0;
+
+}
+
+#booksPage p, ul{
+    font-weight: bolder;
+    color:#22223b;
+}
+
+
+
+form input{
+    width: 50%;
+    padding: 15px;
+    box-shadow: #4a4e69 1px 1px 2px 1px;
+    border-radius: 5px;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #c9ada7;
+  width: 30%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9a8c98;
+}
+
+/* Footer */
+footer {
+  background-color: #22223b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+#categoryList{
+    list-style-type: none;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    
+}
+
+#categoryList a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+#categoryList a:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+    background-color: #9a8c98;
+}
+/* Responsive */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+
+  main p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    width: 20%;
+  }
+
+  form input{
+    width: 30%;
+}
+}
